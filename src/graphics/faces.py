@@ -2,6 +2,7 @@
 
 face_dictionary = {
 'content' : '../resources/bmo-imgs/bmo1.jpg',
+'sad' : '../resources/bmo-imgs/bmo24.jpg',
 'happy' : '../resources/bmo-imgs/bmo9.jpg',
 'angry' : '../resources/bmo-imgs/bmo16.jpg',
 'worried' : '../resources/bmo-imgs/bmo19.jpg',
@@ -29,7 +30,7 @@ no_comment = '../resources/bmo-imgs/bmo20.jpg'
 slight_sad = '../resources/bmo-imgs/bmo21.jpg'
 big_gasp = '../resources/bmo-imgs/bmo22.jpg'
 agony = '../resources/bmo-imgs/bmo23.jpg'
-straight_sad = '../resources/bmo-imgs/bmo24.jpg'
+sad = '../resources/bmo-imgs/bmo24.jpg'
 five_minute_break = '../resources/bmo-imgs/bmo25.jpg'
 u_face = '../resources/bmo-imgs/bmo26.jpg'
 D_face = '../resources/bmo-imgs/bmo52.jpg'
