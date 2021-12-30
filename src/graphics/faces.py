@@ -1,5 +1,16 @@
+
+
+face_dictionary = {
+'content' : '../resources/bmo-imgs/bmo1.jpg',
+'happy' : '../resources/bmo-imgs/bmo9.jpg',
+'angry' : '../resources/bmo-imgs/bmo16.jpg',
+'worried' : '../resources/bmo-imgs/bmo19.jpg',
+'shocked' : '../resources/bmo-imgs/bmo22.jpg'
+}
+
 content = '../resources/bmo-imgs/bmo1.jpg'
 gasp = '../resources/bmo-imgs/bmo2.jpg'
+
 not_amused = '../resources/bmo-imgs/bmo3.jpg'
 im_gonna_get_you = '../resources/bmo-imgs/bmo4.jpg'
 awkward = '../resources/bmo-imgs/bmo6.jpg'
