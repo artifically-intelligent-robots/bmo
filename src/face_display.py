@@ -8,26 +8,23 @@ def calculate_emotional_response(current_emotion):
 
 def main():
     # display default face
+    initial_face = True
     path = face.face_dictionary['happy']
     current_face = cv.imread(path)
-    cv.imshow('happy', current_face )
-    cv.waitKey(1)
+    current_emotion = None
 
 
     # options are : content, sad, happy, angry, worried, shocked, and 'q' to quit
     k = 0
-    while k != ord('q'):
-        # get user emotion input
+    while current_emotion != 'q':
+        #display current face
+        cv.imshow('BMO face', current_face )
+        k = cv.waitKey(1)
+        # get next emotion
         current_emotion = input("How Do you feel?\n")
-        print()
-
-        #change bmo face to that emotion
-        path = calculate_emotional_response(current_emotion)
-        current_face = cv.imread(path)
-        cv.imshow('BMO face', current_face)
-
-        # 'q' to quit loop
-        k = cv.waitKey(0)
+        if current_emotion != 'q':
+            path = calculate_emotional_response(current_emotion)
+            current_face = cv.imread(path)
 
     cv.destroyAllWindows()
 
