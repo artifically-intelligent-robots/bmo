@@ -4,6 +4,7 @@ import graphics.faces as face
 #BMO face response to text
 def calculate_emotional_response(current_emotion):
     #returns the url to the img of the current emotion
+    ## TODO: add error checking for data input
     return face.face_dictionary[current_emotion]
 
 def main():
