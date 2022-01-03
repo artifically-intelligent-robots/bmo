@@ -6,12 +6,12 @@
         },
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Bye BMO", "Till next time"],
-         "responses": ["Bye!"],
+         "responses": ["Bye!", "Check, please"],
          "context": [""]
         },
         {"tag": "thanks",
          "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure", "BMO is the best, I know"],
          "context": [""]
         },
         {"tag": "noanswer",
@@ -19,9 +19,9 @@
          "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
          "context": [""]
         },
-        {"tag": "insult",
+        {"tag": "detective",
          "patterns": [""],
-         "responses": ["Sure he's a dirt bag born out of a mother, but who's not?"],
+         "responses": ["Sure he's a dirt bag born out of a mother, but who's not?", "BMO Chop! If this were a real attack, you'd be dead.", "I feel like I got hit with a Dracula by King Kong."],
          "context": [""]
         },
         {"tag": "annoyed",
@@ -34,9 +34,9 @@
          "responses": ["Who wants to play video games"],
          "context": [""]
         },
-        {"tag": "low_battery",
+        {"tag": "time",
          "patterns": [""],
-         "responses": ["Battery low. Shutdown."],
+         "responses": ["Battery low. Shutdown.", "My alarm says it's time for Finn's bath. Finn, get naked."],
          "context": [""]
         },
         {"tag": "exclamation",
@@ -49,6 +49,16 @@
           "responses": ["Puppies! Puppies! Puppies!"],
           "context": [""]
         },
+        {"tag": "protection",
+         "patterns": ["harm", "hurt", "kill" ],
+         "responses": ["If anyone tries to hurt Finn, I will kill them."],
+         "context": [""]
+       },
+       {"tag": "love",
+        "patterns": ["love", "I love you" ],
+        "responses": ["My face! Finn! Jake! Kiss my face"],
+        "context": [""]
+      }
 
    ]
 }
