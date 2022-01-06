@@ -4,6 +4,11 @@
          "responses": ["Hello!!", "Bow to your sensei"],
          "context": [""]
         },
+        {"tag": "name",
+         "patterns": ["What is your name", "Who are you", "name?"],
+         "responses": ["Hello!!", "Bow to your sensei"],
+         "context": [""]
+        },
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Bye BMO", "Till next time"],
          "responses": ["Bye!", "Check, please"],
