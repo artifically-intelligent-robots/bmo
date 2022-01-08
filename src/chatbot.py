@@ -1,6 +1,7 @@
 import nltk
+nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer
+stemmer = LancasterStemmer()
 
 import numpy as np
 import tflearn
@@ -26,12 +27,11 @@ for intent in data["intents"]:
     for pattern in intent["patterns"]:
         tokens = nltk.word_tokenize(pattern)
         words.extend(tokens)
-        pattern_x.append(token)
+        pattern_x.append(tokens)
         tag_y.append(intent["tag"])
 
     if intent["tag"] not in labels:
         labels.append(intent["tag"])
-}
 
 # stem all words
 words = [stemmer.stem(w.lower()) for w in words if w != "?"]
@@ -39,6 +39,9 @@ words = [stemmer.stem(w.lower()) for w in words if w != "?"]
 #remove duplicate words, convert back into list, sort it alphabetic
 words = sorted(list(set(words)))
 
+
+training = []
+output = []
 # empty list size of labels
 out_empty = [0 for _ in range(len(labels))]
 
@@ -76,12 +79,12 @@ output = np.array(output)
 ''' Preprocessing complete '''
 
 
-tf.reset_default_graph()
+tf.compat.v1.reset_default_graph()
 
 net = tflearn.input_data(shape=[None, len(training[0])])
 net = tflearn.fully_connected(net, 8)
 net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, len(output[0])), activation="softmax")
+net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
 net = tflearn.regression(net)
 
 model = tflearn.DNN(net)

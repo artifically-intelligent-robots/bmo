@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/jarodhowls/BMO/bmo/src/model.tflearn"
+all_model_checkpoint_paths: "/Users/jarodhowls/BMO/bmo/src/model.tflearn"
